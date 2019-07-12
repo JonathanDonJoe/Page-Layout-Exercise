@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Layout Exercise</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+
+        html{
+            box-sizing: border-box;
+        }
+
+        *,*::before,*::after{
+            box-sizing: border-box;
+        }
+        
+        body{
+            height:100vh;
+            width:100vw;
+            display:flex;
+            flex-wrap:wrap;
+            margin:0;
+            padding:0;
+            text-align: center;
+        }
+        #box1{
+            height:100vh;
+            width:20vw;
+            background-color:lightcoral;
+            border:1px black solid;
+        }
+        #box24{
+            height:25vh;
+            width:20vw;
+            background-color: lightgreen;
+            border:1px black solid;
+        }
+        #box3{
+            height:25vh;
+            width:40vw;
+            background-color: lightblue;            
+            border:1px black solid;
+        }
+        #container1{
+            height:100vh;
+            width:80vw;
+            display:flex;
+            flex-wrap:wrap;
+            margin:0;
+            padding:0;
+        }
+        #container2{
+            height:75vh;
+            width:40vw;
+            display:flex;
+            margin:0;
+            padding:0;
+            flex-direction: column;
+        }
+        #box8{
+            height:75vh;
+            width:40vw;
+            background-color:orange;
+            border:1px black solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">box1</div>
+    <div id="container1">
+        <div id="box24">box2</div>
+        <div id="box3">box3</div>
+        <div id="box24">box4</div>
+        <div id="container2">
+            <div id="box3">box5</div>
+            <div id="box3">box6</div>
+            <div id="box3">box7</div>
+        </div>
+        <div id="box8">box8</div>
+    </div>
+</body>
+</html>
